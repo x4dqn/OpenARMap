@@ -37,20 +37,14 @@
         <meta-data android:name="com.google.ar.core" android:value="required" />
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.ARScanActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".ui.ARScanActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|screenSize">
         </activity>
     </application>
 </manifest> 
